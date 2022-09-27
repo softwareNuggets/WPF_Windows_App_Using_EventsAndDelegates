@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "7c63e8b4-3852-4950-8735-fd8b3f840a60": {
+      "ProjectGuid": "7c63e8b4-3852-4950-8735-fd8b3f840a60",
+      "DisplayName": "WpfWithDelegates",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

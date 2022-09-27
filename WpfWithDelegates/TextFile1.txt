@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First JavaScript</h2>
+
+
+<input type="text" id="fname" onblur='myFunction()'>
+
+<script>
+//document.getElementById("fname").addEventListener("blur", myFunction);
+
+function myFunction() {
+  alert(document.getElementById("fname").value)
+}
+</script>
+</body>
+</html> 

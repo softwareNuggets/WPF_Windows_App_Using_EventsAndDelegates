@@ -1,0 +1,71 @@
+﻿<Window x:Class="WpfWithDelegates.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfWithDelegates"
+        mc:Ignorable="d"
+        Title="Delegate Example" MinWidth="1366" MaxWidth="1366" Width="1366" Height="768">
+    
+    <Grid VerticalAlignment="Top" HorizontalAlignment="Left" 
+          Background="Black" Width="1366" Height="768" MinHeight="768">
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="266"></ColumnDefinition>
+            <ColumnDefinition Width="2"></ColumnDefinition>
+            <ColumnDefinition Width="1100" MinWidth="1100" MaxWidth="1100"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="97"></RowDefinition>
+            <RowDefinition Height="2"></RowDefinition>
+            <RowDefinition Height="570" MaxHeight="570" MinHeight="570"></RowDefinition>
+            <RowDefinition Height="2" />
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="titleBar" 
+                   Grid.Column="0" Grid.ColumnSpan="3" 
+                   Text="C# - Delegates and Events with Abstract Class" 
+                   FontSize="50"  Foreground="#fcdc04" 
+                   FontWeight="ExtraBlack"/>
+
+
+        <Grid Grid.Column="0" Grid.Row="2" Background="DarkGray">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="266"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60" />
+                <RowDefinition Height="2" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="2" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="2" />
+                <RowDefinition Height="24" />
+                <RowDefinition Height="2" />
+                <RowDefinition Height="196" />
+            </Grid.RowDefinitions>
+
+            <Button x:Name="btnPage1" FontSize="24" Content="User Info" Grid.Row="2" 
+                    Margin="0,10,0,0" Click="btnPage1_Click"></Button>
+            <Button x:Name="btnPage2" FontSize="24" Content="Favorites" Grid.Row="4" 
+                    Margin="0,10,0,0" Click="btnPage2_Click"/>
+
+            <StackPanel Orientation="Vertical" Grid.Row="8" Grid.Column="0">
+                <Label x:Name="fullName"></Label>
+
+            </StackPanel>
+
+        </Grid>
+
+        <StackPanel  
+				x:Name="MyStack" 
+                Grid.Row="2" 
+                Grid.Column="2"
+					Height="570" Width="1080"
+                    Background="LightSlateGray" 
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"/>
+    </Grid>
+</Window>
